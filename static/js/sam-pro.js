@@ -228,15 +228,15 @@ let appData = {
             referenceId: 1,
             createdAt: '2025-01-15'
         }
- taxNumber: '123456789',
-        currency: 'SAR',
-        currempanyAddress: 'السعودية - الطائف',
+    ],
+    settings: {
+        companyName: 'مازن المراني',
+        companyAddress: 'الطائف - السعودية',
         companyPhone: '+966-55-681-9810',
         companyEmail: 'mazen3ff@gmail.com',
-       ncySymbol: 'ر.س'    ],
-    settings: {
-        companyName: 'فاتورة',
-        co,
+        taxNumber: '123456789',
+        currency: 'SAR',
+        currencySymbol: 'ر.س',
         taxRate: 10,
         password: '123',
         autoBackup: 'disabled',
@@ -250,9 +250,9 @@ let appData = {
             payment: 2
         },
         developer: {
-            name: 'MOHAMAD MAZEN',
+            name: 'MOHMAAD MAZEN',
             phone: '+966-55-681-9810',
-            email: 'maaaazen3ff@gmail.com'
+            email: 'mazen3ff@gmail.com'
         }
     }
 };
@@ -313,7 +313,18 @@ function initializeDefaultData() {
 
     appData = {
         settings: {
-           
+            companyName: 'مازن المراني',
+            companyAddress: '',
+            companyPhone: '+966-55-681-9810',
+            companyEmail: '',
+            taxNumber: '',
+            currency: 'SAR',
+            currencySymbol: 'ر.س',
+            taxRate: 0,
+            password: '123',
+            enableMultiCurrency: false,
+            exchangeRates: {},
+            nextInvoiceNumber: { sale: 1, purchase: 1 }
         },
         customers: [],
         suppliers: [],
@@ -11185,10 +11196,10 @@ function getSettingsHTML() {
                         <div class="row">
                             <div class="col-md-6">
                                 <h6><i class="fas fa-user me-2"></i>المطور</h6>
-                                <p class="mb-2"><strong>MOHANNAD AHMAD</strong></p>
+                                <p class="mb-2"><strong>MOHMAAD MAZEN</strong></p>
 
                                 <h6><i class="fas fa-phone me-2"></i>رقم الهاتف</h6>
-                                <p class="mb-2">+963-998-171-954</p>
+                                <p class="mb-2">+966-55-681-9810</p>
 
                                 <h6><i class="fas fa-code me-2"></i>التخصص</h6>
                                 <p class="mb-2">تطوير تطبيقات الويب والمحاسبة</p>
