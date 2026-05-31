@@ -228,15 +228,15 @@ let appData = {
             referenceId: 1,
             createdAt: '2025-01-15'
         }
-    ],
+ taxNumber: '123456789',
+        currency: 'SAR',
+        currempanyAddress: 'السعودية - الطائف',
+        companyPhone: '+966-55-681-9810',
+        companyEmail: 'mazen3ff@gmail.com',
+       ncySymbol: 'ر.س'    ],
     settings: {
-        companyName: 'شركة SAM PRO',
-        companyAddress: 'دمشق - سوريا',
-        companyPhone: '+963-998-171-954',
-        companyEmail: 'info@sampro.sy',
-        taxNumber: '123456789',
-        currency: 'SYP',
-        currencySymbol: 'ل.س',
+        companyName: 'فاتورة',
+        co,
         taxRate: 10,
         password: '123',
         autoBackup: 'disabled',
@@ -250,9 +250,9 @@ let appData = {
             payment: 2
         },
         developer: {
-            name: 'MOHANNAD AHMAD',
-            phone: '+963-998-171-954',
-            email: 'mohannad.ahmad@example.com'
+            name: 'MOHAMAD MAZEN',
+            phone: '+966-55-681-9810',
+            email: 'maaaazen3ff@gmail.com'
         }
     }
 };
@@ -313,18 +313,7 @@ function initializeDefaultData() {
 
     appData = {
         settings: {
-            companyName: 'شركة سام برو',
-            companyAddress: '',
-            companyPhone: '+963-998-171-954',
-            companyEmail: '',
-            taxNumber: '',
-            currency: 'SYP',
-            currencySymbol: 'ل.س',
-            taxRate: 0,
-            password: '123',
-            enableMultiCurrency: false,
-            exchangeRates: {},
-            nextInvoiceNumber: { sale: 1, purchase: 1 }
+           
         },
         customers: [],
         suppliers: [],
